@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './today.less';
 
-export default function Today ({ icon }) {
+export default function Today ({ icon, description, temperature }) {
 
   return (
     <div className={styles.container}>
@@ -9,8 +9,8 @@ export default function Today ({ icon }) {
       <div className={styles.content}>
         <span>{icon}</span>
         <div>
-          <p className={styles.number}>19&#176;</p>
-          <h4>Sunny</h4>
+          <p className={styles.number}>{temperature}&#176;</p>
+          <h4>{description}</h4>
         </div>
       </div>
     </div >
