@@ -121,10 +121,26 @@ export default function Weather () {
                 />
               </div>
               <div className={styles.forecast}>
-                <Card day={dayNames[0]} temperature={Math.round(forecast[1].temp.day)} icon={<Icon type={forecast[1].weather[0].main} size={72} />} />
-                <Card day={dayNames[1]} temperature={Math.round(forecast[2].temp.day)} icon={<Icon type={forecast[2].weather[0].main} size={72} />} />
-                <Card day={dayNames[2]} temperature={Math.round(forecast[3].temp.day)} icon={<Icon type={forecast[3].weather[0].main} size={72} />} />
-                <Card day={dayNames[3]} temperature={Math.round(forecast[4].temp.day)} icon={<Icon type={forecast[4].weather[0].main} size={72} />} />
+                <Card
+                  day={dayNames[0]}
+                  temperature={Math.round(forecast[1].temp.day)}
+                  icon={<Icon type={forecast[1].weather[0].main} size={72} />}
+                />
+                <Card
+                  day={dayNames[1]}
+                  temperature={Math.round(forecast[2].temp.day)}
+                  icon={<Icon type={forecast[2].weather[0].main} size={72} />}
+                />
+                <Card
+                  day={dayNames[2]}
+                  temperature={Math.round(forecast[3].temp.day)}
+                  icon={<Icon type={forecast[3].weather[0].main} size={72} />}
+                />
+                <Card
+                  day={dayNames[3]}
+                  temperature={Math.round(forecast[4].temp.day)}
+                  icon={<Icon type={forecast[4].weather[0].main} size={72} />}
+                />
               </div>
             </>
           )
