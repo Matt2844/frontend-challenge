@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './card.less';
 
-export default function Prediction ({ icon }) {
+export default function Prediction ({ icon, temperature, day }) {
 
   return (
     <div className={styles.container}>
-      <h4>Wed</h4>
+      <h4>{day}</h4>
       <span>{icon}</span>
-      <p className={styles.number}>17&#176;</p>
+      <p className={styles.number}>{temperature}&#176;</p>
     </div>
   )
 }
